@@ -16,11 +16,8 @@ const connect = function () {
 
   conn.on('connect', () => {
     console.log(`Successfully connected to game server`);
-    process.stdout.write(`Name: `);
-    process.stdin.on('data', (data) => {
-      const name = data.toString(); // can't use data.replace(/^\s+|\s+$/g, '') because data is a buffer and not a string
-      conn.write(`Name: ${name.replace(/^\s+|\s+$/g, '')}`);
-    });
+   
+    conn.write(`Name: AJL`);
   });
 
   return conn;
