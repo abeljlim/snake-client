@@ -20,7 +20,7 @@ const connect = function () {
     conn.write(`Name: AJL`);
   });
   conn.on('connect', () => {
-    console.log(`Successfully connected to game server`);
+    // console.log(`Successfully connected to game server`);
    
     // conn.write(`Move: up`);
     // setInterval(() => conn.write(`Move: up`), 50);
